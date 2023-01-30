@@ -1,0 +1,114 @@
+<html>
+
+<body style="padding: 100px; background-color: blanchedalmond;">
+
+    <h1 style="margin-left: 350px;">BRUGU</h1>
+    <div style="margin-left: 350px;">
+        <img src="https://images.unsplash.com/photo-1533450718592-29d45635f0a9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8anBnfGVufDB8fDB8fA%3D%3D&w=1000&q=80"
+            width="200px" height="200px" />
+    </div>
+    <h2 style="margin-left: 350px;">software solutions</h2>
+    <p>Although Brugu was founded in 2018, the journey began in 2016. A chance meeting at an international blockchain
+        conference between two friends (now our founders) and an impending need for a decentralised land registry
+        brought the two together. Brugu means "Bhrigu," one of the seven great sages of Hinduism who is revered as the
+        father of happiness.<a href="https://brugu.io/about-us">click</a></p>
+    <div style="margin-left: 350px;">
+        <img src="htt//images.unsplash.com/photo-1533450718592-29d45635f0a9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8anBnfGVufDB8fDB8fA%3D%3D&w=1000&q=80"
+            width="200px" height="200px" alt="TIGER" />
+    </div>
+    <div style="margin-left: 350px;">
+        <ol>
+            <li style="color: blue;">hii</li>
+            <li style="color: purple;">hello</li>
+            <li style="color: red;">brugu</li>
+        </ol>
+        <ul>
+            <li style="color:brown;">hii</li>
+            <li style="color: green;">hello</li>
+            <li style="color: gold;">brugu</li>
+        </ul>
+    </div>
+    <div style="margin-left: 350px;">
+        <img src="https://croppola.com/croppola/example-bird2/image.jpg" height="200px" width="200px"
+            alt="bird" /><br /><a href="https://croppola.com/croppola/example-bird2/image.jpg">download</a>
+    </div>
+    <div>
+        <p><i>Although Brugu was founded in 2018, the journey began in 2016. </i><b>A chance meeting at an international
+                blockchain conference between two friends (now our founders) and an impending need for a decentralised
+                land registry brought the two together.</b><s>Brugu means "Bhrigu," one of the seven great sages of
+                Hinduism who is revered as the father of happiness.</s></p>
+    </div>
+    <div style="margin-left: 350px;">
+
+
+        <h3>form</h3>
+        <form>
+            <div>
+                <input type="radio" name="one" value="male" onclick="asd(event)" />MALE
+                <input type="radio" name="one" value="female" onclick="asd(event)" />FEMALE
+                <input type="radio" name="one" value="others" onclick="asd(event)" />OTHERS
+            </div><br />
+            <div>
+                <input type="checkbox" value="cricket" onclick="cvb(event)" /> CRICKET <br />
+                <input type="checkbox" value="vally ball" onclick="cvb(event)" /> VALLY BALL <br />
+                <input type="checkbox" value=" kabadi" onclick="cvb(event)" /> KABADI
+
+            </div><br />
+            <div>
+                <label for="html">NAME:</label>
+                <input type="text" maxlength="30" placeholder="text" id="nam"><br /><br />
+                <label for="html">NUMBER:</label>
+                <input type="number" max="100" min="-10" placeholder="number" id="num"><br /><br />
+                <label for="html">EMAIL:</label>
+                <input type="email" placeholder="email" id="mail"><br /><br />
+                <label for="html">PASSWORD</label>
+                <input type="password" minlength="12" placeholder="password" id="pass"><br /><br />
+                <label for="html">DATE</label>
+                <input type="date" placeholder="date" min="2023-01-20" id="da"><br /><br />
+            </div>
+        </form>
+        <button onclick="na()">click</button>
+    </div>
+</body>
+<script>
+    var br=""
+    var ar = {
+        c: "",
+        v: "",
+        k: ""
+
+    };
+    function cvb(e) {
+        if (e.target.value === "cricket") {
+            ar.c = e.target.value
+        }
+        else if (e.target.value === "vallyball") {
+            ar.v = e.target.value
+        }
+        else {
+            ar.k = e.target.value
+        }
+    }
+    function asd(e) {
+        br = e.target.value
+
+    }
+    function na() {
+       
+        date = document.getElementById("da").value
+        password = document.getElementById("pass").value
+        email = document.getElementById("mail").value
+        name = document.getElementById("nam").value
+        number = document.getElementById("num").value
+        console.log(br)
+        console.log("course :"  +ar.c+ar.v+ar.k)
+        console.log(name)
+        console.log(number)
+        console.log(email)
+        console.log(password)
+        console.log(date)
+
+    }
+</script>
+
+</html>
