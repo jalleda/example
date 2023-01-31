@@ -30,7 +30,7 @@
     </div>
     <div style="margin-left: 350px;">
         <img src="https://croppola.com/croppola/example-bird2/image.jpg" height="200px" width="200px"
-            alt="bird" /><br /><a href="https://croppola.com/croppola/example-bird2/image.jpg">download</a>
+            alt="bird" /><br /><a href="" download="https://croppola.com/croppola/example-bird2/image.jpg">download</a>
     </div>
     <div>
         <p><i>Although Brugu was founded in 2018, the journey began in 2016. </i><b>A chance meeting at an international
@@ -54,6 +54,15 @@
                 <input type="checkbox" value=" kabadi" onclick="cvb(event)" /> KABADI
 
             </div><br />
+            <div style="margin-bottom: 60px;">
+                <label for="html">COUNTRY:</label>
+                <select>
+                    <option value="india" onselect="ty(event)">India</option>
+                    <option value="usa">U S A</option>
+                    <option value="japan">japan</option>
+                </select>
+            </div>
+            
             <div>
                 <label for="html">NAME:</label>
                 <input type="text" maxlength="30" placeholder="text" id="nam"><br /><br />
@@ -67,11 +76,13 @@
                 <input type="date" placeholder="date" min="2023-01-20" id="da"><br /><br />
             </div>
         </form>
-        <button onclick="na()">click</button>
+        <button onclick="na()">submit</button>
     </div>
 </body>
 <script>
-    var br=""
+    var br = ""
+
+    var c = []
     var ar = {
         c: "",
         v: "",
@@ -93,15 +104,20 @@
         br = e.target.value
 
     }
+    function ty(e) {
+        c = e.target.value
+        alert(hii)
+    }
     function na() {
-       
+
         date = document.getElementById("da").value
         password = document.getElementById("pass").value
         email = document.getElementById("mail").value
         name = document.getElementById("nam").value
         number = document.getElementById("num").value
         console.log(br)
-        console.log("course :"  +ar.c+ar.v+ar.k)
+        console.log("course :" + ar.c + ar.v + ar.k)
+        console.log("country" + c)
         console.log(name)
         console.log(number)
         console.log(email)
