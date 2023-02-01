@@ -1,0 +1,99 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <style>
+        .con{
+            display: grid;
+            grid-area: auto;
+            height: 100%;
+            gap: 2px;
+            text-align: center;
+        }
+        .head{
+            border-radius: 20px;
+            border: 2px solid black;
+            grid-column: 1/12;
+        }
+        .foot{
+            border-radius: 20px;
+            border: 2px solid black;
+            grid-column: 1/12;
+        }
+        .side{
+            border-radius: 20px;
+            border: 2px solid black;
+            grid-area: 2/1/9/3;
+        }
+        .ad{
+            border-radius: 20px;
+            border: 2px solid black;
+            grid-area: 2/9/9/12;
+        }
+        .nav{
+            border-radius: 20px;
+            border: 2px solid black;
+            grid-area: 2/3/3/9;
+        }
+        .man{
+            border-radius: 20px;
+            border: 2px solid black;
+            grid-area: 3/3/9/9; 
+        }
+        @media (max-width:900px) {
+            .head{
+                grid-column: 1/13;
+            }
+            .nav{
+                grid-column: 1/13;
+            }
+            .side{
+                grid-area:3/1/9/4 ;
+            }
+            .man{
+                grid-area: 3/4/9/13;
+            }
+            .ad{
+                grid-area: 9/1/10/3;
+            }
+            .foot{
+                grid-area: 9/3/10/13;
+            }
+        }
+        @media(max-width:600px) {
+            .head{
+                grid-column: 1/13;
+            }
+            .nav{
+                grid-column:1/13 ;
+            }
+            .man{
+                grid-area: 3/1/9/13;
+            }
+            .side{
+                grid-area:9/1/10/13 ;
+            }
+            .ad{
+             grid-area:10/1/11/13 ;   
+            }
+            .foot{
+               grid-area:11/1/12/13 ;  
+            }
+            
+        }
+    </style>
+    <body>
+        <div class="con">
+            <div class="head">
+                <p>head</p>
+            </div>
+            <div class="side">sidebar  </div>
+            <div class="nav">navbar </div>
+            <div class="man">main</div>
+            <div class="ad">ads</div>
+            <div class="foot">footer</div>
+           
+        </div>
+
+    </body>
+</html>
