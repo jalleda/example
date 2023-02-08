@@ -1,0 +1,48 @@
+.but:hover{
+background-color:white;
+color: black;
+width: 170px;
+height: 70px;
+
+}
+.but{
+    width: 170px;
+    height: 70px; 
+}
+.p1{
+    opacity: 50%;
+}
+
+
+.div1:hover{
+    border: 2px solid blue;
+}
+
+.mohan{
+    font-family: 'Poppins', sans-serif;
+}
+.i1{
+    background-color: blue;
+}
+.an{
+    
+        animation: 2s anim-lineUp ease-out ;
+      }
+      @keyframes anim-lineUp {
+        0% {
+          opacity: 0;
+          transform: translateY(80%);
+        }
+        20% {
+          opacity: 0;
+        }
+        50% {
+          opacity: 1;
+          transform: translateY(0%);
+        }
+        100% {
+          opacity: 1;
+          transform: translateY(0%);
+        }
+      }
+
