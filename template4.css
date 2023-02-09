@@ -1,30 +1,30 @@
-.but:hover{
+#section4.but:hover{
 background-color:white;
 color: black;
 width: 170px;
 height: 70px;
 
 }
-.but{
+#section4.but{
     width: 170px;
     height: 70px; 
 }
-.p1{
+#section4.p1{
     opacity: 50%;
 }
 
 
-.div1:hover{
+#section4.div1:hover{
     border: 2px solid blue;
 }
 
-.mohan{
+#section4.mohan{
     font-family: 'Poppins', sans-serif;
 }
-.i1{
+#section4.i1{
     background-color: blue;
 }
-.an{
+#section4.an{
     
         animation: 2s anim-lineUp ease-out ;
       }
